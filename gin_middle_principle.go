@@ -11,16 +11,16 @@ const abortIndex int8 = math.MaxInt8 / 2
 // index是执行到的handler的索引
 type Context struct {
 	handlers []func(c *Context)
-	index	 int8
+	index    int8
 }
 
 // 为Context的handler链添加handler
 func (c *Context) Use(f func(c *Context)) {
-	c.handlers = append(c.handlers,f)
+	c.handlers = append(c.handlers, f)
 }
 
-func (c *Context) GET(path string,f func(c *Context)) {
-	c.handlers = append(c.handlers,f)
+func (c *Context) GET(path string, f func(c *Context)) {
+	c.handlers = append(c.handlers, f)
 }
 
 // 更新Context里handler链的索引，方便下一个handler执行
