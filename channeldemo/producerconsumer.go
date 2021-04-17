@@ -5,6 +5,8 @@ import (
 	"time"
 )
 
+// 生产者消费
+
 func Producer(out chan int) {
 	defer close(out)
 	for i := 0 ; i < 5 ; i ++ {
