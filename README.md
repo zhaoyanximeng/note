@@ -3,4 +3,4 @@
 ginmiddlewareprinciple:gin中间件实现原理
 channeldemo:使用channel找出int切片偶数，再将这些数乘10
 goroutinedemo:控制协程数量
-timecontroller:超时控制
+timeoutcontroller:超时控制
