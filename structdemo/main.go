@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+// 结构体
+
 type User struct {
 	id int
 }
