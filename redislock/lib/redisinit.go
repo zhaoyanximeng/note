@@ -16,9 +16,9 @@ func GetRedisClient() *redis.Client {
 	redisClient_Once.Do(func() {
 		redisClient = redis.NewClient(&redis.Options{
 			Network:            "tcp",
-			Addr:               "r-wz919a4234d025d4pd.redis.rds.aliyuncs.com:6379",
+			Addr:               "",
 			//Username:           "r-wz919a4234d025d4",
-			Password:           "19981216@Shaocong",
+			Password:           "",
 
 			//连接池容量及闲置连接数量
 			PoolSize:     15, // 连接池数量
